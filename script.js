@@ -2,6 +2,7 @@ const adicionarTarefa = document.getElementById('criar-tarefa');
 const inputText = document.getElementById('texto-tarefa');
 const questList = document.getElementById('lista-tarefas');
 const limparListaButton = document.getElementById('apaga-tudo');
+const limparCompletedButton = document.getElementById('remover-finalizados');
 
 function adicionarNaLista(string) {
   const novaTarefa = document.createElement('li');
@@ -42,4 +43,13 @@ questList.addEventListener('click', (event) => {
 
 limparListaButton.addEventListener('click', () => {
   questList.innerHTML = null;
+});
+
+limparCompletedButton.addEventListener('click', () => {
+  for (let index = 0; index < questList.children.length; index += 1) {
+    if (questList.children[index].classList.contains('completed')) {
+      questList.children[index].remove();
+      index -= 1;
+    }
+  }
 });
