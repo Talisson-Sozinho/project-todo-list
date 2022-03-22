@@ -5,12 +5,12 @@
 }
 
 body {
-  background-color: green;
+  background-color: lightgreen;
 }
 
 main {
   margin: 10vh auto;
-  padding-top: 1%;
+  padding-top: 2.5%;
   padding-left: 2%;
   width: 70vw;
   height: 40vh;
@@ -18,3 +18,7 @@ main {
   border-radius: 2.5em;
 }
 
+header p {
+  margin-top: 5px;
+  color: gray;
+}
