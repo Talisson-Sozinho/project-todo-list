@@ -46,3 +46,7 @@ header p {
   margin-top: 1.25em;
   margin-left: 2.5em;
 }
+
+#lista-tarefas li {
+  margin-top: 5px;
+}
