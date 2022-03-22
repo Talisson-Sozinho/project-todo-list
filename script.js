@@ -14,9 +14,21 @@ adicionarTarefa.addEventListener('click', () => {
   inputText.value = '';
 });
 
+function removeSlected() {
+  for (let index = 0; index < questList.childNodes.length; index += 1) {
+    if (questList.childNodes[index].className === 'task selected') {
+      console.log('removing');
+      questList.childNodes[index].style.backgroundColor = '#ffffff';
+      questList.childNodes[index].className = 'task';
+    }
+  }
+}
+
 questList.addEventListener('click', (event) => {
   const clickTarget = event.target;
   if (clickTarget.className === 'task') {
+    removeSlected();
+    clickTarget.classList.add('selected');
     clickTarget.style.backgroundColor = 'gray';
   }
 });
