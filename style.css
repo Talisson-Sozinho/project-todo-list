@@ -12,8 +12,8 @@ main {
   margin: 10vh auto;
   padding-top: 2.5%;
   padding-left: 2%;
+  padding-bottom: 2.5%;
   width: 70vw;
-  height: 40vh;
   background-color: white;
   border-radius: 2.5em;
 }
@@ -49,4 +49,8 @@ header p {
 
 #lista-tarefas li {
   margin-top: 5px;
+}
+
+.completed {
+  text-decoration: line-through solid black;
 }
