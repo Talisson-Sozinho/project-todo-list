@@ -1,6 +1,7 @@
 const adicionarTarefa = document.getElementById('criar-tarefa');
 const inputText = document.getElementById('texto-tarefa');
 const questList = document.getElementById('lista-tarefas');
+const limparListaButton = document.getElementById('apaga-tudo');
 
 function adicionarNaLista(string) {
   const novaTarefa = document.createElement('li');
@@ -37,4 +38,8 @@ questList.addEventListener('click', (event) => {
     clickTarget.classList.toggle('selected');
     clickTarget.style.backgroundColor = 'gray';
   }
+});
+
+limparListaButton.addEventListener('click', () => {
+  questList.innerHTML = null;
 });
