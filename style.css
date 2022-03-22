@@ -22,3 +22,27 @@ header p {
   margin-top: 5px;
   color: gray;
 }
+
+#texto-tarefa {
+  margin-top: 2.25vh;
+  line-height: 2em;
+}
+
+#criar-tarefa {
+  height: 2.2em;
+  width: 7.5em;
+  border-radius: 3em;
+  border: 0;
+  background-color: lightblue;
+  margin-left: 1em;
+}
+
+#criar-tarefa:hover {
+  filter: brightness(0.85);
+}
+
+#lista-tarefas {
+  font-size: 1.25em;
+  margin-top: 1.25em;
+  margin-left: 2.5em;
+}
