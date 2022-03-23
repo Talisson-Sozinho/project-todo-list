@@ -28,10 +28,14 @@ adicionarTarefa.addEventListener('click', () => {
   inputText.value = '';
 });
 
+function colorBackgroundItem(number) {
+  return (number % 2 === 0) ? 'lightcyan' : 'lightgoldenrodyellow';
+}
+
 function removeSlected() {
   for (let index = 0; index < questList.childNodes.length; index += 1) {
     if (questList.childNodes[index].classList.contains('selected')) {
-      questList.childNodes[index].style.backgroundColor = '#ffffff';
+      questList.childNodes[index].style.backgroundColor = colorBackgroundItem(index);
       questList.childNodes[index].classList.remove('selected');
     }
   }

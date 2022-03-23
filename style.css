@@ -13,9 +13,13 @@ main {
   padding-top: 2.5%;
   padding-left: 2%;
   padding-bottom: 2.5%;
-  width: 70vw;
-  background-color: white;
+  width: 55vw;
+  background-color: pink;
   border-radius: 2.5em;
+}
+
+header {
+  margin-left: 1.75em;
 }
 
 header p {
@@ -25,7 +29,11 @@ header p {
 
 #texto-tarefa {
   margin-top: 2.25vh;
+  margin-left: 1.75em;
   line-height: 2em;
+  border-radius: 10px;
+  border: 1px solid black;
+  text-align: center;
 }
 
 #criar-tarefa {
@@ -84,7 +92,20 @@ header p {
 }
 
 #lista-tarefas li {
+  margin-right: 5em;
   margin-top: 5px;
+  padding-left: 1em;
+  border-radius: 10px;
+  line-height: 2em;
+}
+
+#lista-tarefas li:nth-child( 2n + 1 ) {
+  background-color: lightcyan;
+}
+
+
+#lista-tarefas li:nth-child( 2n ) {
+  background-color: lightgoldenrodyellow;
 }
 
 .completed {
