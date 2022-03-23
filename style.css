@@ -29,16 +29,42 @@ header p {
 }
 
 #criar-tarefa {
-  height: 2.2em;
-  width: 7.5em;
-  border-radius: 3em;
-  border: 0;
-  background-color: lightblue;
   margin-left: 1em;
+  background-color: lightblue;
 }
 
-#criar-tarefa:hover {
-  filter: brightness(0.85);
+#apaga-tudo {
+  margin-left: 1em;
+  background-color: lightcoral;
+}
+
+#remover-finalizados {
+  margin-left: 1em;
+  background-color: lightblue;
+}
+
+#salvar-tarefas {
+  margin-left: 1em;
+  background-color: lightgreen;
+}
+
+#mover-cima , #mover-baixo {
+  background-color: lightgoldenrodyellow;
+  filter: saturate(3);
+}
+
+#mover-cima:hover , #mover-baixo:hover {
+  filter: brightness(0.9) saturate(3);
+}
+
+.btn-style {
+  padding: 0.75em 2em;
+  border-radius: 3em;
+  border: 0;
+}
+
+.btn-style:hover {
+  filter: brightness(0.9);
 }
 
 #lista-tarefas {

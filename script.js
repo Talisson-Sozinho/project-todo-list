@@ -3,6 +3,17 @@ const inputText = document.getElementById('texto-tarefa');
 const questList = document.getElementById('lista-tarefas');
 const limparListaButton = document.getElementById('apaga-tudo');
 const limparCompletedButton = document.getElementById('remover-finalizados');
+const salvarListaButton = document.getElementById('salvar-tarefas');
+const moveToNextButton = document.getElementById('mover-baixo');
+const moveToPreviousButton = document.getElementById('mover-cima');
+
+salvarListaButton.addEventListener('click', () => {
+  localStorage.setItem('taskList', JSON.stringify(questList.innerHTML));
+});
+
+if (localStorage.getItem('taskList')) {
+  questList.innerHTML = JSON.parse(localStorage.getItem('taskList'));
+}
 
 function adicionarNaLista(string) {
   const novaTarefa = document.createElement('li');
@@ -53,3 +64,24 @@ limparCompletedButton.addEventListener('click', () => {
     }
   }
 });
+
+function moveItTo(event) {
+  const newList = document.createElement('ol');
+  const numItems = questList.childElementCount;
+  for (let index = 0; index < numItems; index += 1) {
+    if (
+      index + 1 !== numItems
+      && questList.children[event.target.value].classList.contains('selected')
+    ) {
+      newList.appendChild(questList.children[1]);
+      newList.appendChild(questList.children[0]);
+      index += 1;
+    } else {
+      newList.appendChild(questList.children[0]);
+    }
+  }
+  questList.innerHTML = newList.innerHTML;
+}
+
+moveToNextButton.addEventListener('click', moveItTo);
+moveToPreviousButton.addEventListener('click', moveItTo);
