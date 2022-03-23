@@ -6,6 +6,7 @@ const limparCompletedButton = document.getElementById('remover-finalizados');
 const salvarListaButton = document.getElementById('salvar-tarefas');
 const moveToNextButton = document.getElementById('mover-baixo');
 const moveToPreviousButton = document.getElementById('mover-cima');
+const deleteTaskButton = document.getElementById('remover-selecionado');
 
 salvarListaButton.addEventListener('click', () => {
   localStorage.setItem('taskList', JSON.stringify(questList.innerHTML));
@@ -85,3 +86,11 @@ function moveItTo(event) {
 
 moveToNextButton.addEventListener('click', moveItTo);
 moveToPreviousButton.addEventListener('click', moveItTo);
+
+deleteTaskButton.addEventListener('click', () => {
+  for (let index = 0; index < questList.childElementCount; index += 1) {
+    if (questList.children[index].classList.contains('selected')) {
+      questList.children[index].remove();
+    }
+  }
+});

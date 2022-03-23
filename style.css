@@ -33,6 +33,10 @@ header p {
   background-color: lightblue;
 }
 
+.buttons-container {
+  margin-top: 2.5em;
+}
+
 #apaga-tudo {
   margin-left: 1em;
   background-color: lightcoral;
@@ -54,7 +58,13 @@ header p {
 }
 
 #mover-cima:hover , #mover-baixo:hover {
-  filter: brightness(0.9) saturate(3);
+  filter: brightness(0.8) saturate(2);
+}
+
+#remover-selecionado {
+  margin-left: 1em;
+  margin-right: 1em;
+  background-color: lightcoral;
 }
 
 .btn-style {
@@ -64,7 +74,7 @@ header p {
 }
 
 .btn-style:hover {
-  filter: brightness(0.9);
+  filter: brightness(0.8);
 }
 
 #lista-tarefas {
