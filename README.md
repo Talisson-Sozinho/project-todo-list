@@ -5,11 +5,11 @@
 
 # Resultado visual
 
-<img src='https://user-images.githubusercontent.com/79944385/160266020-bf78f04b-9048-4179-b0a6-ef45999f557d.png'>
+<img src='https://user-images.githubusercontent.com/79944385/160266088-f7b1aea9-4cd7-446d-b939-759ceadb81b5.gif'>
 
 # Avaliação feita pela Trybe
 
-<img src='https://user-images.githubusercontent.com/79944385/160266088-f7b1aea9-4cd7-446d-b939-759ceadb81b5.gif'>
+<img src='https://user-images.githubusercontent.com/79944385/160266020-bf78f04b-9048-4179-b0a6-ef45999f557d.png'>
 
 # Habilidades
 
