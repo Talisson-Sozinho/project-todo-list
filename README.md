@@ -3,8 +3,6 @@
   Este projeto feito ao fim do bloco 5 no curso da [Trybe](https://www.betrybe.com/) para consolidar meu
   conhecimentos de html, css e javascript.
 
-# Resultado visual
-
 <img src='https://user-images.githubusercontent.com/79944385/160266088-f7b1aea9-4cd7-446d-b939-759ceadb81b5.gif'>
 
 # Avaliação feita pela Trybe
